@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dadi.current_affairs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/currentaffairs"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/currentaffairs"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="dadi.current_affairs.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <Fragment android:name=".Hindu" />
+        <Fragment android:name=".TabFragment" />
+        <Fragment android:name=".Times" />
+        <Fragment android:name=".Home" />
+
+        <activity android:name="dadi.current_affairs.NewsToday" />
+        <activity android:name="dadi.current_affairs.MoreDetails"></activity>
+    </application>
+
+</manifest>
